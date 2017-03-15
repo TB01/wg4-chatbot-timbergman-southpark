@@ -1,0 +1,72 @@
+
+COMMANDS:
+
+setchar <character name>
+  Sets the current character to the requested character and outputs a quote from them.
+  Alternative phrases you can use:
+    i want to speak to <character name>
+    i want to talk to <character name>
+    give me <character name>
+  Example:
+    setchar butters
+    i want to speak to cartman
+
+sayhi
+  Will introduce the chatbot and output a greeting.
+  If the person's name is known, it will also greet the person using the the stored chat partner information name field. 
+  Alternative phrases you can use:
+  hello
+  hi
+  bonjour
+  guten tag
+  konnichiwa
+
+saybye
+  Will say goodbye. If the person's name is known, it will also greet the person using the stored chat partner information name field.
+  Alternative phrases you can use: 
+    goodbye
+    bye
+    farewell
+    fare thee well
+
+givesyn
+  Will output a synopsis of an existing episode.
+  Alternative phrases you can use:
+    give a synopsis
+    give a summary
+    give me a synopsis
+    give me a summary
+
+createsyn
+  Creates a new episode synopsis using markov chain text generation. Will not make sense, but will at least sound like a south park episode, I guess...
+  Alternative phrases you can use:
+    generate a synopsis
+    create a synopsis
+    create a summary
+    generate a synopsis
+      
+createquot
+  Creates some random quote using markov chain text generation. Again, will not make any sense, but it will sound like south park.
+  Alternative phrases you can use:
+    generate a quote
+    create a quote
+  
+sayaschar <character name>
+  Creates a quote using markov chain text generation drawing from the speech patterns of particular characters. As such, the quotes will at least sound like they have the personality of the requested character, even if they don't make any sense in terms of meaning.
+  Alternative phrases you can use:
+    say something like <character name>
+    speak like <character name>
+    talk like <character name>
+  Example: 
+    say something like cartman
+    speak like tweek
+    sayaschar satan
+      
+setname <your name>
+  Creates an information field in the chat partner information database with a 'name' key. As such, when it needs to use your name (for example in greeting you), it will be able to do so.
+  Alternative phrases you can use:
+    my name is <your name>
+    i am <your name>
+  Example:
+    my name is john
+    setname bobina
